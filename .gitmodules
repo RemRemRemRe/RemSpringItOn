@@ -1,0 +1,3 @@
+[submodule "Source/ThirdParty/Spring-It-On"]
+	path = Source/ThirdParty/SpringItOn
+	url = https://github.com/orangeduck/Spring-It-On.git
