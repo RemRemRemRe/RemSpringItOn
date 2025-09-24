@@ -11,7 +11,6 @@ public class SpringItOn : ModuleRules
 
 		PublicIncludePaths.Add(Path.Combine(ModuleDirectory, "SpringItOn"));
 
-		PublicDefinitions.Add("M_PI=UE_PI");
 		PublicDefinitions.Add("SPRING_IT_ON_FOR_UNREAL=1");
 	}
 }
