@@ -10,9 +10,8 @@
 UCLASS()
 class REM_API URemSpringItOnStatics : public UBlueprintFunctionLibrary
 {
-	GENERATED_BODY()
+    GENERATED_BODY()
 
-public:
 };
 
 namespace Rem::SpringItOn

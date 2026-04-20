@@ -10,7 +10,7 @@
 UCLASS(Config = RemSpringItOnTags)
 class REM_API URemSpringItOnTags : public URemMetaTags
 {
-	GENERATED_BODY()
+    GENERATED_BODY()
 };
 
 #undef REM_API
