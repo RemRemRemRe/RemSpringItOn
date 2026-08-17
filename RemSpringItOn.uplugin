@@ -21,6 +21,11 @@
             "Name": "RemSpringItOn",
             "Type": "Runtime",
             "LoadingPhase": "Default"
+        },
+        {
+            "Name": "RemSpringItOnTest",
+            "Type": "UncookedOnly",
+            "LoadingPhase": "Default"
         }
     ],
     "Plugins": [
