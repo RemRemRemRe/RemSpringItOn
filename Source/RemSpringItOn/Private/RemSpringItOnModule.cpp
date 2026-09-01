@@ -16,6 +16,7 @@ bool IRemSpringItOnModule::IsAvailable()
 
 class FRemSpringItOnModule final : public IRemSpringItOnModule
 {
+public:
     /** IModuleInterface implementation */
     virtual void StartupModule() override;
     virtual void ShutdownModule() override;
