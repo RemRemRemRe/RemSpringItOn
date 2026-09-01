@@ -172,8 +172,8 @@ void FRemSpringItOnStaticsTest::Define()
             const auto Frequency = 2.0f;
             const auto Halflife  = critical_halflife(Frequency);
 
-            auto Position = 0.0f;
-            auto Velocity = 0.0f;
+            auto Position  = 0.0f;
+            auto Velocity  = 0.0f;
             bool Overshoot = false;
             for (int32 Index = 0; Index < StepCount; ++Index)
             {
