@@ -14,6 +14,8 @@ bool IRemSpringItOnModule::IsAvailable()
 }
 
 
+namespace
+{
 class FRemSpringItOnModule final : public IRemSpringItOnModule
 {
 public:
@@ -35,4 +37,5 @@ void FRemSpringItOnModule::ShutdownModule()
     // This function may be called during shutdown to clean up your module.  For modules that support dynamic reloading,
     // we call this function before unloading the module.
     IRemSpringItOnModule::ShutdownModule();
+}
 }
