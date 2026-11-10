@@ -17,7 +17,7 @@ float Settle(TStep&& Step)
     auto Position = 0.0f;
     auto Velocity = 0.0f;
 
-    for (int32 Index = 0; Index < StepCount; ++Index)
+    for (auto Index = 0; Index < StepCount; ++Index)
     {
         Step(Position, Velocity);
     }
@@ -49,7 +49,7 @@ void FRemSpringItOnStaticsTest::Define()
         It(TEXT("damper_exponential should converge toward the goal"), [this]
         {
             auto Position = 0.0f;
-            for (int32 Index = 0; Index < StepCount; ++Index)
+            for (auto Index = 0; Index < StepCount; ++Index)
             {
                 Position = damper_exponential(Position, 1.0f, 8.0f, 1.0f / 60.0f);
             }
@@ -174,8 +174,8 @@ void FRemSpringItOnStaticsTest::Define()
 
             auto Position  = 0.0f;
             auto Velocity  = 0.0f;
-            bool Overshoot = false;
-            for (int32 Index = 0; Index < StepCount; ++Index)
+            auto Overshoot = false;
+            for (auto Index = 0; Index < StepCount; ++Index)
             {
                 spring_damper_exact(Position, Velocity, 1.0f, 0.0f, Frequency, Halflife, 1.0f / 60.0f);
                 Overshoot |= Position > 1.0f + 1e-3f;
@@ -209,8 +209,8 @@ void FRemSpringItOnStaticsTest::Define()
         {
             auto Position  = 0.0f;
             auto Velocity  = 0.0f;
-            bool Overshoot = false;
-            for (int32 Index = 0; Index < StepCount; ++Index)
+            auto Overshoot = false;
+            for (auto Index = 0; Index < StepCount; ++Index)
             {
                 critical_spring_damper_exact(Position, Velocity, 1.0f, 0.0f, 0.2f, 1.0f / 60.0f);
                 Overshoot |= Position > 1.0f + 1e-3f;
@@ -234,7 +234,7 @@ void FRemSpringItOnStaticsTest::Define()
         {
             auto Position = 1.0f;
             auto Velocity = 0.5f;
-            for (int32 Index = 0; Index < StepCount; ++Index)
+            for (auto Index = 0; Index < StepCount; ++Index)
             {
                 decay_spring_damper_exact(Position, Velocity, 0.2f, 1.0f / 60.0f);
             }
